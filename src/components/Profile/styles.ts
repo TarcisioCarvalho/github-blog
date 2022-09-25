@@ -17,6 +17,11 @@ export const ProfileContainer = styled.section`
     left:50%;
     transform : translate(-50%,-50%); */
 
+    img {
+        width:148px;
+        height:148px;
+        border-radius:8px;
+    }
 
     div {
         h2 {

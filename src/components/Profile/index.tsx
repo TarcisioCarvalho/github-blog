@@ -2,17 +2,51 @@ import React from 'react'
 import { ProfileContainer } from './styles'
 import image from '../../assets/img/profile.svg';
 import { ArrowSquareUpRight, Buildings, GithubLogo, Users } from 'phosphor-react';
+import { api } from '../../lib/axios';
+
+interface DataProfileProps{
+  img:string;
+  name:string;
+  bio:string;
+  company:string;
+  html_url:string;
+  login:string;
+  followers:number;
+}
 
 export const Profile = () => {
+
+  const [dataProfile,setDataProfile] = React.useState({} as DataProfileProps);
+
+  async function req(){
+    const RESPONSE = await api.get('');
+    const {avatar_url,name,bio,company,html_url,login,followers} = RESPONSE.data;
+    setDataProfile({...dataProfile,
+      name,
+      bio,
+      company,
+      login,
+      followers,
+      img:avatar_url,
+      html_url
+    })
+    
+  }
+
+  React.useEffect(()=>{
+    req();
+  })
+
+
   return (
     <ProfileContainer>
-        <img src={image} alt="Foto de perfil" />
+        <img src={dataProfile.img} alt="Foto de perfil" />
         <div>
             <div>
-                <h2>Cameron <span><a href="https://github.com/TarcisioCarvalho"> github <span><ArrowSquareUpRight size={12}/></span></a></span></h2>
+                <h2>{dataProfile.name} <span><a href={dataProfile.html_url}> github <span><ArrowSquareUpRight size={12}/></span></a></span></h2>
             </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur dignissimos aperiam praesentium laudantium atque esse. </p>
-            <div><span><GithubLogo  size={18}/> Cameron</span><span><Buildings size={18}/> Rocket</span><span><Users size={18}/> 32 seguidores</span></div>
+            <p>{dataProfile.bio} </p>
+            <div><span><GithubLogo  size={18}/> {dataProfile.login}</span><span><Buildings size={18}/> {dataProfile.company}</span><span><Users size={18}/> {dataProfile.followers} seguidores</span></div>
         </div>
     </ProfileContainer>
   )

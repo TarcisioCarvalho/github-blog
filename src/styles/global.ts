@@ -16,6 +16,7 @@ export const GlobalStyle = createGlobalStyle`
         color:${({theme})=> theme["base-text"]};
         -webkit-font-smoothing:antialiased;
         font-family: 'Nunito', sans-serif;
+        padding-bottom:2rem;
     }
 
     body, input, textArea , button {

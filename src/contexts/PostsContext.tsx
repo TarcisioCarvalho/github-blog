@@ -1,30 +1,50 @@
 
-import React from 'react'
+import React, { Children, ReactNode } from 'react'
+import { apiPosts } from '../lib/axios';
 
 interface Post{
-    title:string;
-    body:string;
-    created_at:string;
-    html_url:string;
-    login:string;
-    comments:number;
+  title:string;
+  body:string;
+  created_at:string;
 }
 
-export const PostContext = React.createContext({});
+interface PostContextType{
+   posts:Post[] | undefined;
+}
 
-export const PostsContextProvider = () => {
+interface PostContextProvider{
+  children:ReactNode;
+}
 
-    const [posts,setPosts] = React.useState();
+export const PostsContext = React.createContext({} as PostContextType);
 
-    function searchPosts(){
+export const PostsContextProvider = ({children}:PostContextProvider) => {
 
-    }
+  const [posts,setPosts] = React.useState<Post[]>()
 
-    React.useEffect(()=>{
+  async function searchPosts(){
 
+    const RESPONSE = await apiPosts.get('');
+    const {title,body,created_at} = RESPONSE.data;
+    
+    const postsResp:Post[] = RESPONSE.data.items.map((post:any) => {
+      return {
+        title:post.title,
+        created_at:post.created_at,
+        body:post.body,
+
+      }
     })
+    setPosts(state => [...postsResp])
+  }
+
+  React.useEffect(()=>{
+    searchPosts();
+  },[]) 
 
   return (
-    <div>PostsContext</div>
+    <PostsContext.Provider value={{posts}}>
+      {children}
+    </PostsContext.Provider>
   )
 }

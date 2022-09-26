@@ -23,7 +23,7 @@ export const PostContainer = styled.article`
             font-weight: bold;
         }
         span {
-            font-size:14px;
+            font-size:10px;
         }
     }
 `;

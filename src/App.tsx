@@ -3,6 +3,7 @@ import { Header } from "./components/Header"
 import { Posts } from "./components/Posts"
 import { Profile } from "./components/Profile"
 import { SearchBar } from "./components/SearchBar"
+import { PostsContextProvider } from "./contexts/PostsContext"
 import { Home } from "./pages/Home"
 import { PostPage } from "./pages/PostPage"
 import { GlobalStyle } from "./styles/global"
@@ -14,7 +15,10 @@ function App() {
 
   return (
     <ThemeProvider theme={defaultTheme}>
-     <Home/>
+      <PostsContextProvider>
+        <Home/>
+      </PostsContextProvider>
+      
       <GlobalStyle/>
     </ThemeProvider>
   )

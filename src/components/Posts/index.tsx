@@ -5,6 +5,7 @@ import { Post } from './Post'
 import { PostsContainer } from './styles'
 
 interface Post{
+  number:number;
   title:string;
   body:string;
   created_at:string;
@@ -39,7 +40,7 @@ export const Posts = () => {
     
     <PostsContainer>
        
-      {posts?.map(post => <Post  body={post.body} title = {post.title} created_at = {post.created_at}/>)}
+      {posts?.map(post => <Post key={post.number} body={post.body} title = {post.title} created_at = {post.created_at}/>)}
         
     </PostsContainer>
   )

@@ -6,6 +6,7 @@ interface Post{
   title:string;
   body:string;
   created_at:string;
+  number:number;
 }
 
 interface PostContextType{
@@ -32,7 +33,7 @@ export const PostsContextProvider = ({children}:PostContextProvider) => {
         title:post.title,
         created_at:post.created_at,
         body:post.body,
-
+        number:post.number
       }
     })
     setPosts(state => [...postsResp])

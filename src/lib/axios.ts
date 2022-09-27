@@ -6,5 +6,10 @@ export const api = axios.create({
 
 
 export const apiPosts = axios.create({
-    baseURL: 'https://api.github.com/search/issues?q=repo:TarcisioCarvalho/github-blog'
+    baseURL: 'https://api.github.com/search/issues'
+})
+
+
+export const apiPostDetail = axios.create({
+    baseURL: 'https://api.github.com/repos/TarcisioCarvalho/github-blog/issues'
 })

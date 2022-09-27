@@ -1,0 +1,71 @@
+{
+    "total_count": 1,
+    "incomplete_results": false,
+    "items": [
+      {
+        "url": "https://api.github.com/repos/TarcisioCarvalho/github-blog/issues/1",
+        "repository_url": "https://api.github.com/repos/TarcisioCarvalho/github-blog",
+        "labels_url": "https://api.github.com/repos/TarcisioCarvalho/github-blog/issues/1/labels{/name}",
+        "comments_url": "https://api.github.com/repos/TarcisioCarvalho/github-blog/issues/1/comments",
+        "events_url": "https://api.github.com/repos/TarcisioCarvalho/github-blog/issues/1/events",
+        "html_url": "https://github.com/TarcisioCarvalho/github-blog/issues/1",
+        "id": 1385174657,
+        "node_id": "I_kwDOID9x585SkBaB",
+        "number": 1,
+        "title": " Jogo-Xadrez-Typescript",
+        "user": {
+          "login": "TarcisioCarvalho",
+          "id": 24461526,
+          "node_id": "MDQ6VXNlcjI0NDYxNTI2",
+          "avatar_url": "https://avatars.githubusercontent.com/u/24461526?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/TarcisioCarvalho",
+          "html_url": "https://github.com/TarcisioCarvalho",
+          "followers_url": "https://api.github.com/users/TarcisioCarvalho/followers",
+          "following_url": "https://api.github.com/users/TarcisioCarvalho/following{/other_user}",
+          "gists_url": "https://api.github.com/users/TarcisioCarvalho/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/TarcisioCarvalho/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/TarcisioCarvalho/subscriptions",
+          "organizations_url": "https://api.github.com/users/TarcisioCarvalho/orgs",
+          "repos_url": "https://api.github.com/users/TarcisioCarvalho/repos",
+          "events_url": "https://api.github.com/users/TarcisioCarvalho/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/TarcisioCarvalho/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [
+  
+        ],
+        "state": "open",
+        "locked": false,
+        "assignee": null,
+        "assignees": [
+  
+        ],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2022-09-25T21:46:42Z",
+        "updated_at": "2022-09-26T00:43:06Z",
+        "closed_at": null,
+        "author_association": "OWNER",
+        "active_lock_reason": null,
+        "body": "\r\nJogo de Xadrez Desenvolvido com Typescript e Orientação a Objetos.\r\n\r\n\r\n\r\n\r\n\r\n\r\n# Jogo-Xadrez---Typescript\r\n[![NPM](https://img.shields.io/npm/l/react)](https://github.com/TarcisioCarvalho/Jogo-Xadrez-Typescript/blob/main/LICENSE)\r\n\r\n# Sobre o projeto\r\n\r\nhttps://jogo-xadrez-typescript.vercel.app/\r\n\r\nJogo de Xadrez Desenvolvido com Typescript e Orientação a Objetos. \r\n\r\n Para praticar Typescript e orientação a objetos desenvolvi um jogo de xadrez utilizando\r\n diversos conceitos de OO. \r\n\r\n## Principais Conceitos\r\n\r\n- Herança\r\n- Poliformismo\r\n- Metódos Státicos\r\n- Classes Abstratas\r\n- Manipulação de DOM\r\n- ECMAScript \r\n- Estrutura de dados\r\n\r\n# Regras e Jogadas Implementadas\r\n\r\n- Cada peça possui um movimento especifico\r\n- Xeque e Xeque-Mate\r\n- Jogo não permite o jogador se colocar em xeque.\r\n- Jogadas especiais Roque Grande, Roque Pequeno e Enpassant\r\n- Promoção do peão para rainha\r\n- Pecas capturadas mostradas visualmente\r\n\r\n## Diagrama de classes que o projeto foi baseado\r\n\r\n\r\n<img  src = 'https://github.com/TarcisioCarvalho/Jogo-Xadrez-Typescript/blob/main/src/assets/Imgs_Projeto/chess-system-design.png?raw=true'>\r\n\r\n## Layout do Jogo\r\n\r\n<img  src = 'https://github.com/TarcisioCarvalho/Jogo-Xadrez-Typescript/blob/main/src/assets/Imgs_Projeto/Jogo-Xadrez.jpg?raw=true'>\r\n\r\n## Funcionalidades do jogo\r\n\r\n### Captura de Peças\r\n<img  src = 'https://github.com/TarcisioCarvalho/Jogo-Xadrez-Typescript/blob/main/src/assets/Imgs_Projeto/CapturaPecas.gif?raw=true'>\r\n\r\n### Promoção\r\n<img  src = 'https://github.com/TarcisioCarvalho/Jogo-Xadrez-Typescript/blob/main/src/assets/Imgs_Projeto/Promocao.gif?raw=true'>\r\n\r\n### Xeque-Mate\r\n<img  src = 'https://github.com/TarcisioCarvalho/Jogo-Xadrez-Typescript/blob/main/src/assets/Imgs_Projeto/Xeque-Mate.gif?raw=true'>\r\n\r\n### Roque-Pequeno\r\n<img  src = 'https://github.com/TarcisioCarvalho/Jogo-Xadrez-Typescript/blob/main/src/assets/Imgs_Projeto/JogadaEspecialRoquePequeno.gif?raw=true'>\r\n\r\n### Roque-Grande\r\n<img  src = 'https://github.com/TarcisioCarvalho/Jogo-Xadrez-Typescript/blob/main/src/assets/Imgs_Projeto/JogadaEspecialRoqueGrande.gif?raw=true'>\r\n\r\n### En-Passant\r\n<img  src = 'https://github.com/TarcisioCarvalho/Jogo-Xadrez-Typescript/blob/main/src/assets/Imgs_Projeto/JogadaEspecialEnPassant.gif?raw=true'>\r\n\r\n\r\n# Tecnologias utilizadas\r\n\r\n## Front end\r\n- Typescript\r\n\r\n## Implantação em produção\r\n\r\n- Front end web: Vercel\r\n\r\n\r\n# Como executar o projeto\r\n\r\n\r\n## Front end web\r\nPré-requisitos: npm / yarn\r\n\r\n```bash\r\n# clonar repositório\r\ngit clone https://github.com/TarcisioCarvalho/Jogo-Xadrex-Typescript\r\n\r\n# entrar na pasta do projeto front end web\r\ncd Jogo-Xadrex-Typescript\r\n\r\n# instalar dependências\r\nnpm install\r\n\r\n# executar o projeto\r\nnpm start\r\n```\r\n\r\n# Autor\r\n\r\nTarcísio José de Amorim Carvalho\r\n\r\nhttps://www.linkedin.com/in/tarcisio-jose-de-amorim-carvalho\r\n",
+        "reactions": {
+          "url": "https://api.github.com/repos/TarcisioCarvalho/github-blog/issues/1/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "timeline_url": "https://api.github.com/repos/TarcisioCarvalho/github-blog/issues/1/timeline",
+        "performed_via_github_app": null,
+        "state_reason": null,
+        "score": 1.0
+      }
+    ]
+  }

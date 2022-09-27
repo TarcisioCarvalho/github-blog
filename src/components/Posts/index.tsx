@@ -40,7 +40,7 @@ export const Posts = () => {
     
     <PostsContainer>
        
-      {posts?.map(post => <Post key={post.number} body={post.body} title = {post.title} created_at = {post.created_at}/>)}
+      {posts?.map(post => <Post key={post.number} number = {post.number} body={post.body} title = {post.title} created_at = {post.created_at}/>)}
         
     </PostsContainer>
   )

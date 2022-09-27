@@ -11,7 +11,7 @@ export const Home = () => {
 
   return (
     <>
-      <Header/>
+      
       <Profile/>
       <SearchBar/>
       <Posts/>

@@ -11,6 +11,7 @@ interface Post{
 
 interface PostContextType{
    posts:Post[] | undefined;
+   searchPosts: (query?:string) => void;
 }
 
 interface PostContextProvider{
@@ -23,9 +24,14 @@ export const PostsContextProvider = ({children}:PostContextProvider) => {
 
   const [posts,setPosts] = React.useState<Post[]>()
 
-  async function searchPosts(){
-
-    const RESPONSE = await apiPosts.get('');
+  async function searchPosts(query?:string){
+    
+    const URL = query === undefined?"repo:TarcisioCarvalho/github-blog":`${query}repo:TarcisioCarvalho/github-blog`
+    const RESPONSE = await apiPosts.get('',{
+      params:{
+        q:URL
+      }
+    });
     const {title,body,created_at} = RESPONSE.data;
     
     const postsResp:Post[] = RESPONSE.data.items.map((post:any) => {
@@ -44,7 +50,7 @@ export const PostsContextProvider = ({children}:PostContextProvider) => {
   },[]) 
 
   return (
-    <PostsContext.Provider value={{posts}}>
+    <PostsContext.Provider value={{posts,searchPosts}}>
       {children}
     </PostsContext.Provider>
   )

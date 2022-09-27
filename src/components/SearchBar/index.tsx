@@ -3,13 +3,15 @@ import { PostsContext } from '../../contexts/PostsContext'
 import { SearchBarContainer } from './styles'
 
 export const SearchBar = () => {
-  
-  const {posts} = React.useContext(PostsContext);
+
+  const {posts,searchPosts} = React.useContext(PostsContext);
   const [input,setInput] = React.useState<string>();
+
+  
 
   function handleSubmit(e:React.SyntheticEvent){
     e.preventDefault();
-    console.log(input);
+    searchPosts(input);
   }
 
   function handleChange(e: React.ChangeEvent<HTMLInputElement>){

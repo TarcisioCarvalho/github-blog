@@ -1,5 +1,5 @@
 
-import React, { Children, ReactNode } from 'react'
+import React, { ReactNode } from 'react'
 import { apiPosts } from '../lib/axios';
 
 interface Post{

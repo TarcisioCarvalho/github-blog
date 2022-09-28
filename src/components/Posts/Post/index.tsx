@@ -1,8 +1,7 @@
-import React from 'react'
 import { PostContainer } from './styles'
 import {formatDistanceToNow} from 'date-fns';
 import ptBR from 'date-fns/locale/pt-BR'
-import { Link, useParams } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 interface PostProps{
   title:string;
@@ -15,8 +14,6 @@ interface PostProps{
 
 export const Post = ({title,body,created_at,number}:PostProps) => {
 
-  
-  
   return (
     <Link to={`post/${number}`} style = {{textDecoration:'none'}}>
       <PostContainer >

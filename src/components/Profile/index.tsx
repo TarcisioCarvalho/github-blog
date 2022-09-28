@@ -1,6 +1,5 @@
 import React from 'react'
 import { ProfileContainer } from './styles'
-import image from '../../assets/img/profile.svg';
 import { ArrowSquareUpRight, Buildings, GithubLogo, Users } from 'phosphor-react';
 import { api } from '../../lib/axios';
 

@@ -1,11 +1,12 @@
-import { ArrowCircleLeft, ArrowSquareUpRight, Backpack, Balloon, Calendar, ChatCircleDots, GithubLogo } from 'phosphor-react'
+import { ArrowCircleLeft, ArrowSquareUpRight, Calendar, ChatCircleDots, GithubLogo } from 'phosphor-react'
 import React from 'react'
-import { PostContent, PostHeader } from './styles'
+import { PostContent, PostHeader } from './styles';
 import { Link, useParams } from 'react-router-dom';
-import { apiPostDetail, apiPosts } from '../../lib/axios';
+import { apiPostDetail } from '../../lib/axios';
 import ReactMarkdonw from 'react-markdown';
 import {formatDistanceToNow} from 'date-fns';
-import ptBR from 'date-fns/locale/pt-BR'
+import ptBR from 'date-fns/locale/pt-BR';
+
 interface PostPageType{
   title:string;
   login:string;
@@ -23,11 +24,8 @@ export const PostPage = () => {
   async function req() {
 
     const RESPONSE = await apiPostDetail.get(`${number}`);
-    console.log(RESPONSE.data);
     const {title,user,comments,created_at,body,html_url} = RESPONSE.data;
     const {login} = user;
-
-    console.log();
 
     setPost({
       html_url:html_url,
@@ -42,11 +40,6 @@ export const PostPage = () => {
   React.useEffect(()=>{
     req();
   },[])
-  /* const postDateFormated = formatDistanceToNow(new Date(post?.created_at),{
-    locale:ptBR,
-    addSuffix:true,}) */
-
-    //console.log(postDateFormated);
    
   return (
     <>

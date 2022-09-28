@@ -35,9 +35,8 @@ Layout disponibilizado no Figma [Layout](https://www.figma.com/community/file/11
 
 ## Layout
 
-<img  src = 'https://github.com/TarcisioCarvalho/coffe-delivery/blob/main/src/assets/img/HomeCoffeDelivery.jpg'>
-<img  src = 'https://github.com/TarcisioCarvalho/coffe-delivery/blob/main/src/assets/img/CoffeDeliveryCheckOut.jpg'>
-<img  src = 'https://github.com/TarcisioCarvalho/coffe-delivery/blob/main/src/assets/img/SuccessPage.jpg'>
+<img  src = 'https://github.com/TarcisioCarvalho/github-blog/blob/main/src/assets/img/blog-page.jpg?raw=true'>
+<img  src = 'https://github.com/TarcisioCarvalho/github-blog/blob/main/src/assets/img/post-page.jpg?raw=true'>
 
 # Tecnologias utilizadas
 

@@ -7,7 +7,7 @@ https://github-blog-lp7v.vercel.app/
 
 Terceiro desafio da trilha de ReactJS do Ignite. 
 
- Desenvolvimento de um blog pessoal o  **github-blog** com a utilização de clientes HTTP consumindo a **API** do Github.
+ Desenvolvimento de um blog pessoal o  **github-blog** com a utilização de clientes HTTP consumindo a **API** do Github. Os posts são feitos no blog através da criação de issues no repósitorio do github.
 
 Layout disponibilizado no Figma [Layout](https://www.figma.com/community/file/1138814951106121051 "Layout no Figma").
 
@@ -34,8 +34,10 @@ Layout disponibilizado no Figma [Layout](https://www.figma.com/community/file/11
 * Rotas dinãmicas no React-Router-Dom
 
 ## Layout
-
+### Blog-Page
 <img  src = 'https://github.com/TarcisioCarvalho/github-blog/blob/main/src/assets/img/blog-page.jpg?raw=true'>
+
+### Post-Page
 <img  src = 'https://github.com/TarcisioCarvalho/github-blog/blob/main/src/assets/img/post-page.jpg?raw=true'>
 
 # Tecnologias utilizadas

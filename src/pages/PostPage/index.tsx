@@ -53,7 +53,7 @@ export const PostPage = () => {
             </span><span><ChatCircleDots size={18}/>{post?.comments} Comentários </span></div>
           </PostHeader>
           <PostContent>
-            <ReactMarkdonw>{post?.body}</ReactMarkdonw>
+            {post?.body && <ReactMarkdonw>{post?.body}</ReactMarkdonw>}
           </PostContent>
           
     </>

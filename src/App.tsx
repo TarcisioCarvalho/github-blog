@@ -6,7 +6,7 @@ import { SearchBar } from "./components/SearchBar"
 import { PostsContextProvider } from "./contexts/PostsContext"
 import { Home } from "./pages/Home"
 import { PostPage } from "./pages/PostPage"
-import { Router } from "./router"
+import {Router} from './Router'
 import { GlobalStyle } from "./styles/global"
 import { defaultTheme } from "./styles/themes/default"
 import { BrowserRouter } from "react-router-dom"

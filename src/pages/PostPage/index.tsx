@@ -49,10 +49,7 @@ export const PostPage = () => {
             <div><Link to={'/'}><ArrowCircleLeft/> Voltar </Link><a href={post?.html_url}>Github <ArrowSquareUpRight size={12}/></a></div>
             <h1>{post?.title}</h1>
             <div><span><GithubLogo  size={18}/> {post?.login}</span>
-            <span><Calendar size={18}/>{
-              formatDistanceToNow(new Date(post.created_at),{
-              locale:ptBR,
-              addSuffix:true,})}
+            <span><Calendar size={18}/>{post?.created_at}
             </span><span><ChatCircleDots size={18}/>{post?.comments} Comentários </span></div>
           </PostHeader>
           <PostContent>

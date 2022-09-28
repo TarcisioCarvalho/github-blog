@@ -2,6 +2,7 @@ import { PostContainer } from './styles'
 import {formatDistanceToNow} from 'date-fns';
 import ptBR from 'date-fns/locale/pt-BR'
 import { Link } from 'react-router-dom';
+import ReactMarkdown from 'react-markdown';
 
 interface PostProps{
   title:string;
@@ -23,9 +24,7 @@ export const Post = ({title,body,created_at,number}:PostProps) => {
                       locale:ptBR,
                       addSuffix:true,})}</span>
           </header>
-          <p>
-          {body.split('.')[0]} 
-          </p>
+       
       </PostContainer>
     </Link>
   )
